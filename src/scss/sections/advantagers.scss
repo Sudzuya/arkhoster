@@ -1,0 +1,46 @@
+.advantagers {
+
+    &__container {
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 60px;
+        max-width: 540px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-areas:
+            "A A A B B B"
+            "C C D D E E";
+    }
+
+    &__item {
+        &:nth-child(1) {
+            grid-area: A;
+        }
+        &:nth-child(2) {
+            grid-area: B;
+        }
+        &:nth-child(3) {
+            grid-area: C;
+        }
+        &:nth-child(4) {
+            grid-area: D;
+        }
+        &:nth-child(5) {
+            grid-area: E;
+        }
+    }
+
+    &__text {
+    }
+
+    &__img {
+    }
+}
