@@ -1,0 +1,112 @@
+.admin-panel {
+    margin-bottom: 130px;
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    &__item {
+        position: relative;
+        background: #293B50;
+        border-radius: 20px;
+        padding: 30px 32px 32px;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            object-position: right;
+        }
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__img {
+        height: 305px;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 32px;
+        position: relative;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 46px;
+        margin-bottom: 32px;
+    }
+
+    &__more {
+        display: inline-flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        padding: 18px 48px;
+        background: #3482FC;
+        border-radius: 8px;
+    }
+}
+.spollers {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+
+    &__item {
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+        padding-left: 28px;
+        position: relative;
+        &::before, &::after{
+            content:'';
+            position: absolute;
+            left: 0;
+            width: 12px;
+            height: 2px;
+            background-color: #F5F5F5;
+            border-radius: 30px;
+            transition: all .5s ease;
+        }
+        &::after {
+            transform: rotate(90deg) scale(1);
+        }
+        &._spoller-active {
+            &::after {
+                transform: rotate(90deg) scale(0);
+            }
+        }
+    }
+
+    &__body {
+        font-size: 18px;
+        line-height: 26px;
+        color: #98A5B1;
+        padding-top: 16px;
+    }
+}
+

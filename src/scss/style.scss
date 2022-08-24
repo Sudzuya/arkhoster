@@ -67,7 +67,18 @@ body {
 	overflow: hidden;
 	// Прижимаем footer
 	> main {
+		position: relative;
 		flex: 1 1 auto;
+		&::before {
+			content:"";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: url('@img/bg.svg');
+			z-index: -10;
+		}
 	}
 	// Фикс для слайдеров
 	> * {
@@ -137,5 +148,7 @@ body {
 	// Блоки на странице
 	@import "sections/favoritGame.scss";
 	@import "sections/advantagers.scss";
-	@import "sections/allGame.scss"
+	@import "sections/allGame.scss";
+	@import "sections/adminPanel.scss";
+	@import "sections/blog.scss"
 
