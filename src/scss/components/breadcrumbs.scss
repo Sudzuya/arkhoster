@@ -1,0 +1,30 @@
+.breadcrumbs {
+
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 32px 0 64px;
+    }
+
+    &__list-item {
+        span {
+            color: #6F6F6F;
+        }
+    }
+
+    &__link {
+    }
+
+    &__separator {
+        background: #6F6F6F;
+        width: 20px;
+        height: 1px;
+    }
+}

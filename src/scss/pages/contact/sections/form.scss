@@ -1,0 +1,34 @@
+.application {
+    position: relative;
+    padding: 40px 0 140px;
+    &__bg {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 690px;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(75, 143, 246, 0) 0%, rgba(75, 102, 246, 0.23) 100%);
+        pointer-events: none;
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 540px;
+        gap: 150px;
+    }
+
+    &__info {
+    }
+
+    &__title {
+        margin-bottom: 18px;
+    }
+
+    &__text {
+        font-size: 18px;
+        color: #6F6F6F;
+        line-height: 26px;
+    }
+
+}
+

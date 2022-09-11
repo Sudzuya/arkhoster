@@ -143,12 +143,20 @@ body {
 @import "header";
 @import "footer";
 
-// Подключение стилей отдельных страниц
-@import "home";
-	// Блоки на странице
-	@import "sections/favoritGame.scss";
-	@import "sections/advantagers.scss";
-	@import "sections/allGame.scss";
-	@import "sections/adminPanel.scss";
-	@import "sections/blog.scss"
+// Подключение стилей отдельных компонентов
+@import 'components/breadcrumbs';
+@import 'components/form';
 
+// Подключение стилей отдельных страниц
+
+// Главная страница
+@import "home";
+// Контакты
+@import "pages/contact/contact";
+// О компании
+@import "pages/aboutUs/aboutUs";
+// Блог
+@import "pages/blog/blog";
+@import "pages/blog/blogFull.scss";
+//Отдельная страница игры
+@import "pages/games/singleGame.scss"

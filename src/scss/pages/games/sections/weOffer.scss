@@ -1,0 +1,51 @@
+.we-offer {
+    position: relative;
+    margin-bottom: 160px;
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__title {
+        color: #98A5B1;
+        margin-bottom: 32px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 32px
+    }
+
+    &__item {
+        background: rgba(41, 59, 80, 0.7);
+        border-radius: 20px;
+        padding: 24px;
+        display: grid;
+        grid-template-areas:
+            "A B"
+            "A C";
+        gap: 12px 16px;
+    }
+
+    &__img {
+        grid-area: A;
+        width: 64px;
+        height: 64px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__item-title {
+        color: #F5F5F5;
+    }
+
+    &__text {
+        line-height: 24px;
+        color: #98A5B1;
+    }
+}

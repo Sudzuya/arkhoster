@@ -27,9 +27,9 @@ import "../../scss/base/swiper.scss";
 function initSliders() {
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на стронице
-	if (document.querySelector('.swiper')) { // Указываем скласс нужного слайдера
+	if (document.querySelector('.favorit-game .swiper')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.swiper', { // Указываем скласс нужного слайдера
+		new Swiper('.favorit-game .swiper', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Navigation],
@@ -78,6 +78,87 @@ function initSliders() {
 			navigation: {
 				prevEl: '.favorit-game__navigation .favorit-game__prev',
 				nextEl: '.favorit-game__navigation .favorit-game__next',
+			},
+
+			// Брейкпоинты
+			/*
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+					autoHeight: true,
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				},
+				1268: {
+					slidesPerView: 4,
+					spaceBetween: 30,
+				},
+			},
+			*/
+			// События
+			on: {
+
+			}
+		});
+	}
+	if (document.querySelector('.documentation .swiper')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.documentation .swiper', { // Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation],
+			wrapperClass: 'documentation__wrapper',
+			slideClass: 'documentation__slide',
+			observer: true,
+			observeParents: true,
+			slidesPerView: 2,
+			spaceBetween: 35,
+			autoHeight: true,
+			speed: 800,
+			// centeredSlides: true,
+			initialSlide: 1,
+			//touchRatio: 0,
+			//simulateTouch: false,
+			loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			// Пагинация
+			/*
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			*/
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.documentation-nav .documentation-nav__prev',
+				nextEl: '.documentation-nav .documentation-nav__next',
 			},
 
 			// Брейкпоинты

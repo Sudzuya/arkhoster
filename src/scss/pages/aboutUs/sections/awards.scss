@@ -1,0 +1,37 @@
+.awards {
+    margin-bottom: 130px;
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__title {
+        margin-bottom: 64px;
+    }
+
+    &__content {
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        &:not(:last-child) {
+            padding-bottom: 64px;
+            margin-bottom: 64px;
+            border-bottom: 1px solid #6F6F6F;
+        }
+    }
+
+    &__item {
+        height: 110px;
+        width: 230px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}

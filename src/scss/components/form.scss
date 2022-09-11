@@ -1,0 +1,63 @@
+.form {
+    display: grid;
+    grid-template-areas:
+        "A A"
+        "B C"
+        "D D"
+        "E E"
+        "F F";
+    gap: 24px;
+
+    & input:nth-child(1) {
+        grid-area: A;  
+    }
+
+    & input:nth-child(2) {
+        grid-area: B;  
+    }
+
+    
+    & input:nth-child(3) {
+        grid-area: C;  
+    }
+
+    &__textarea, &__input {
+        padding: 16px;
+        border: 1px solid #6F6F6F;
+        border-radius: 8px;
+        background: #1E2228;
+        transition: border-color .5s ease;
+        &:focus-visible {
+            outline: none;
+            border: 1px solid #3482FC;
+        }
+    }
+
+    &__textarea {
+        grid-area: D;  
+        height: 240px;
+        resize: none;
+    }
+
+    &__input {
+    }
+
+    &__submit {
+        grid-area: E;
+        background: #3482FC;
+        border-radius: 8px;
+        padding: 18px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    &__policy {
+        grid-area: F;  
+        font-size: 14px;
+        color: #6F6F6F;
+        a {
+            color: #3482FC;
+        }
+    }
+}

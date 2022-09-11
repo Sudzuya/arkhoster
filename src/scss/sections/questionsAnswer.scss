@@ -1,0 +1,53 @@
+.questions-answers {
+    padding-bottom: 120px;
+    position: relative;
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 690px;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(75, 143, 246, 0) 0%, rgba(75, 102, 246, 0.23) 100%);
+    }
+
+    &__container {
+    }
+
+    &__body {
+        position: relative;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 46px;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+    &__content {
+    }
+
+    .spollers {
+
+        &__item {
+            border-bottom: 1px solid #6F6F6F;
+            padding: 24px 0;
+        }
+    
+        &__title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+        }
+    
+        &__body {
+            font-size: 16px;
+            line-height: 24px;
+            opacity: 0.5;
+            p {
+                padding-top: 16px;
+            }
+        }
+    }
+}

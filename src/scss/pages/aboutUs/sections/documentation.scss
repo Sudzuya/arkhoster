@@ -1,0 +1,116 @@
+.documentation {
+    margin-bottom: 130px;
+    
+    &__container {
+    }
+
+    &__custom-container {
+        max-width: 1800px;
+        margin: 0 auto;
+        position: relative;
+        padding: 92px 0;
+        background: #293B50;
+        border-radius: 28px;
+        overflow: hidden;
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: -25%;
+        height: 100%;
+        width: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            opacity: .05;
+        }
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: 305px 1fr;
+        gap: 150px;
+    }
+
+    &__col {
+        &:last-child {
+            overflow: hidden;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 26px;
+        color: #98A5B1;
+    }
+
+    &__text-slide {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    &__slider {
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__slide {
+        flex-shrink: 0;
+    }
+
+    &__item {
+    }
+
+    &__img {
+        padding: 32px 80px;
+        margin-bottom: 16px;
+        height: 370px;
+        background: #222E3C;
+        border-radius: 20px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+.documentation-nav {
+    margin-top: auto;
+    margin-bottom: 58px;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    &__prev, &__next {
+        height: 52px;
+        width: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #F5F5F5;
+        border-radius: 12px;
+        padding: 15px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+}
+.swiper {
+}

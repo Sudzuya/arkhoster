@@ -1,0 +1,108 @@
+.main-game {
+    position: relative;
+    margin-top: -112px;
+    margin-bottom: 130px;
+    &__bg {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        height: 1080px;
+        width: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+        &::after {
+            background: linear-gradient(180deg, rgba(51, 51, 51, 0.25) 45.53%, #333333 86.09%);
+        }
+        &::before {
+            background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+        }
+    }
+
+    &__container {
+    }
+
+    &__body {
+        padding-top: 115px;
+        position: relative;
+        display: grid;
+        gap: 145px;
+        align-items: end;
+        grid-template-columns: 1fr 420px;
+    }
+
+    &__col {
+    }
+
+    &__logo {
+        width: 200px;
+        height: 190px;
+        margin-bottom: 24px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__promo {
+        padding: 10px 12px;
+        display: inline-block;
+        background: #3482FC;
+        border-radius: 8px;
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        line-height: 24px;
+    }
+
+    &__custom-serve {
+        position: relative;
+        padding: 24px;
+        background: rgba(41, 59, 80, 0.7);
+        border-radius: 20px
+    }
+
+    &__hot {
+    }
+
+    &__custom-title {
+        margin-bottom: 16px;
+    }
+
+    &__custom-text {
+        line-height: 24px;
+        color: #98A5B1;
+        margin-bottom: 32px;
+    }
+
+    &__custum-btn {
+        padding: 18px 24px;
+        background: #3482FC;
+        border-radius: 8px;
+        text-transform: uppercase;
+    }
+}
+.hot {
+
+    &__img {
+    }
+
+    &__title {
+    }
+}

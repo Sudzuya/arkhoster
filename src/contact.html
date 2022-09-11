@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Контакты"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			@@include('html/_breadcrumbs.htm',{})
+			<main class="page">
+				<section class="contacts">
+					<div class="contacts__container">
+						<div class="contacts__body">
+							<div class="contacts__title">
+								Контакты
+							</div>
+							<div class="contacts__content">
+								<div class="contacts__item">
+									<div class="contacts__img">
+										<img src="@img/contact/phone.svg" alt="">
+									</div>
+									<div class="contacts__item-title">
+										Наши контакты и соц. сети
+									</div>
+									<div class="contacts__text">
+										Свяжитесь с нами если у вас возникли проблемы
+										или вы решили обсудить предложение
+									</div>
+									<div class="contacts__contacts">
+										<a href="mailto:support@arkhoster.ru" class="contacts__link">
+											<div class="contacts__link-img">
+												<img src="@img/icon/mailWhite.svg" alt="">
+											</div>
+											<p>support@arkhoster.ru</p>
+										</a>
+										<a href="tel:4996776666" class="contacts__link">
+											<div class="contacts__link-img">
+												<img src="@img/icon/telWhite.svg" alt="">
+											</div>
+											<p>(499) 677 66-66</p>
+										</a>
+									</div>
+									<div class="contacts__social social">
+										<a class="social__link" href="">
+											<img src="@img/icon/discord.svg" alt="">
+										</a>
+										<a class="social__link" href="">
+											<img src="@img/icon/vk.svg" alt="">
+										</a>
+										<a class="social__link" href="">
+											<img src="@img/icon/telegram.svg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="contacts__item">
+									<div class="contacts__img">
+										<img src="@img/contact/chat.svg" alt="">
+									</div>
+									<div class="contacts__item-title">
+										Онлайн-чат
+									</div>
+									<div class="contacts__text">
+										Задайте вопрос в онлайн-чате, чтобы оперативно получить информацию
+									</div>
+									<button class="contacts__btn">
+										задать вопрос
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="application">
+					<div class="application__bg"></div>
+					<div class="application__container">
+						<div class="application__body">
+							<div class="application__info">
+								<div class="application__title">
+									<h3>
+										Есть предложение или вопрос?
+										<br>
+										Оставьте заявку.
+									</h3>
+								</div>
+								<div class="application__text">
+									Расскажите в общих чертах про вашу проблему или ваше предложение и менеджер с вами свяжется.
+								</div>
+							</div>
+							<div class="application__form">
+								<form action="" class="form">
+									<input type="text" placeholder="Ваше имя" class="form__input">
+									<input type="text" placeholder="Email" class="form__input">
+									<input type="text" placeholder="Телефон" class="form__input">
+									<textarea placeholder="Ваше сообщение" class="form__textarea"></textarea>
+									<button class="form__submit">Отправить заявку</button>
+									<div class="form__policy">
+										Отправляя заявку, вы соглашаетесь с 
+										<a href="">политикой конфиденциальности.</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

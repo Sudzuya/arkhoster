@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Блог"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			@@include('html/_breadcrumbs.htm',{})
+			<main class="page">
+                <section class="blog blog--full">
+                    <div class="blog__bg"></div>
+                    <div class="blog__container">
+                        <div class="blog__item blog__item--actual">
+                            <div class="blog__img">
+                                <img src="@img/blog/01.jpg" alt="">
+                            </div>
+                            <div class="blog__status blog__status--new">
+                                актуально
+                            </div>
+                            <div class="blog__date">
+                                28-07-2022
+                            </div>
+                            <div class="blog__info-title">
+                                <h2>Day of the System Administrator. Holiday Discounts</h2>
+                            </div>
+                        </div>
+                        <div class="blog__body">
+                            <div class="blog__header">
+                                <div class="blog__title">
+                                    <h2>Блог</h2>
+                                </div>
+                                <div class="blog__filter filter">
+                                    <div class="filter__btn" data-filter="*">Все</div>
+                                    <div class="filter__btn" data-filter=".new">Новинки</div>
+                                    <div class="filter__btn" data-filter=".intresting">Интересное</div>
+                                    <div class="filter__btn" data-filter=".blogs">Блог</div>
+                                </div>
+                            </div>
+                            <div class="blog__content">
+                                <a href="/blog-full.html" class="blog__item blog__item--filter new">
+									<div class="blog__img">
+										<img src="@img/blog/02.jpg" alt="">
+									</div>
+									<div class="blog__info">
+										<div class="blog__status blog__status--new">
+											Новинки
+										</div>
+										<div class="blog__date">
+											28-07-2022
+										</div>
+										<div class="blog__info-title">
+											<h3>Day of the System Administrator. Holiday Discounts</h3>
+										</div>
+									</div>
+								</a>
+                                <div class="blog__item blog__item--filter intresting">
+									<div class="blog__img">
+										<img src="@img/blog/03.jpg" alt="">
+									</div>
+									<div class="blog__info">
+										<div class="blog__status blog__status--new">
+											Новинки
+										</div>
+										<div class="blog__date">
+											28-07-2022
+										</div>
+										<div class="blog__info-title">
+											<h3>Day of the System Administrator. Holiday Discounts</h3>
+										</div>
+									</div>
+								</div>
+                                <div class="blog__item blog__item--filter new">
+									<div class="blog__img">
+										<img src="@img/blog/04.jpg" alt="">
+									</div>
+									<div class="blog__info">
+										<div class="blog__status blog__status--new">
+											Новинки
+										</div>
+										<div class="blog__date">
+											28-07-2022
+										</div>
+										<div class="blog__info-title">
+											<h3>Day of the System Administrator. Holiday Discounts</h3>
+										</div>
+									</div>
+								</div>
+                                <div class="blog__item blog__item--filter intresting">
+									<div class="blog__img">
+										<img src="@img/blog/05.jpg" alt="">
+									</div>
+									<div class="blog__info">
+										<div class="blog__status blog__status--new">
+											Новинки
+										</div>
+										<div class="blog__date">
+											28-07-2022
+										</div>
+										<div class="blog__info-title">
+											<h3>Day of the System Administrator. Holiday Discounts</h3>
+										</div>
+									</div>
+								</div>
+                                <div class="blog__item blog__item--filter blogs">
+									<div class="blog__img">
+										<img src="@img/blog/06.jpg" alt="">
+									</div>
+									<div class="blog__info">
+										<div class="blog__status blog__status--new">
+											Новинки
+										</div>
+										<div class="blog__date">
+											28-07-2022
+										</div>
+										<div class="blog__info-title">
+											<h3>Day of the System Administrator. Holiday Discounts</h3>
+										</div>
+									</div>
+								</div>
+                                <div class="blog__item blog__item--filter blogs">
+									<div class="blog__img">
+										<img src="@img/blog/07.jpg" alt="">
+									</div>
+									<div class="blog__info">
+										<div class="blog__status blog__status--new">
+											Новинки
+										</div>
+										<div class="blog__date">
+											28-07-2022
+										</div>
+										<div class="blog__info-title">
+											<h3>Day of the System Administrator. Holiday Discounts</h3>
+										</div>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

@@ -1,3 +1,126 @@
 //====================================================================================================
+.footer {
+    padding: 48px 0 24px;
+    &__container {
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(1, 300px) repeat(3, 1fr);
+        gap: 0px 164px;
+    }
+
+    &__info {
+    }
+
+    &__logo {
+        width: 120px;
+        height: 40px;
+        margin-bottom: 32px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__requisites {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 14px;
+        line-height: 18px;
+        color: #98A5B1;
+    }
+
+    &__servers {
+    }
+
+    &__title {
+        margin-bottom: 12px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #6F6F6F;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    &__company {
+    }
+
+    &__contact {
+    }
+
+    &__img {
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        margin-top: 32px;
+    }
+
+    &__payment {
+        grid-column: 1/ 6;
+        display: flex;
+        justify-content: flex-end;
+        gap: 24px;
+        margin:93px 0 24px;
+    }
+
+    &__copyright {
+        grid-column: 1/ 6;
+        display: flex;
+        gap: 169px;
+        padding-top: 24px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 1px;
+            width: 100vw;
+            transform: translateX(-50%);
+            background-color: #6F6F6F;
+        }
+        p {
+            color: #6F6F6F;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        a {
+            color: #6F6F6F;
+            font-size: 14px;
+            line-height: 18px;
+            text-decoration-line: underline;
+        }
+    }
+}
+.pyment {
+}
+.payment {
+
+    &__img {
+    }
+}
 
 //====================================================================================================

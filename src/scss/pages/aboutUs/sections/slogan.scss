@@ -1,0 +1,50 @@
+.slogan {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 755px;
+    margin-top: -98px;
+    margin-bottom: 90px;
+    
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__container {
+    }
+
+    &__body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img {
+        height: 110px;
+        width: 330px;
+        margin-bottom: 32px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__title {
+        h3 {
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,266 @@
+.servers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 228px;
+    background: #293B50;
+    border-radius: 28px;
+    max-width: 1790px;
+    margin: 0 auto 130px auto;
+    position: relative;
+    overflow: hidden;
+    
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%; 
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__full {
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        color: #F5F5F5;
+        padding: 18px 24px;
+        background: #3482FC;
+        border-radius: 8px;
+        text-transform: uppercase;
+    }
+}
+.tabs {
+    position: relative;
+    margin-bottom: 32px;
+
+		&__container {
+		}
+
+		&__navigation {
+
+            margin-bottom: 48px;
+		}
+
+		&__title {
+
+            &._tab-active {
+                background: #3482FC;
+
+            }
+		}
+
+		&__content {
+		}
+
+		&__body {
+		}
+}
+
+.dedicated-servers {
+
+		&__tabs {
+		}
+
+		&__title {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 46px;
+            margin-bottom: 16px;
+		}
+
+		&__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 43px;
+		}
+
+		&__body {
+            display: grid;
+            gap: 110px;
+            grid-template-columns: 235px 1fr;
+		}
+
+		&__left-block {
+		}
+
+		&__filter {
+		}
+
+		&__rigth-block {
+		}
+
+		&__filter-result {
+		}
+}
+.filter {
+
+		&__item {
+		}
+
+		&__title {
+		}
+
+		&__select {
+		}
+}
+.filter-result {
+
+        span {
+            color: #98A5B1;
+        }
+
+		&__header {
+            display: grid;
+            column-gap: 56px;
+            grid-template-columns: repeat(1, 96px) repeat(5, 1fr);
+            margin-bottom: 34px;
+            padding: 0 24px 0 76px;
+		}
+
+		&__item-filter {
+            &:last-child {
+                grid-column: 6 /7;
+            }
+		}
+
+		&__body {
+		}
+
+		&__item-result {
+            position: relative;
+            display: grid;
+            gap: 56px 28px;
+            grid-template-columns: repeat(1, 96px) repeat(5, 1fr);
+            padding: 36px 24px 24px 76px;
+            background: #F5F5F5;
+            border-radius: 20px;
+            color: #1E2228;
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+		}
+
+        [data-country] {
+            position: relative;
+            &::before {
+                content:"";
+                position: absolute;
+                top: 0;
+                left: -44px;
+                width: 28px;
+                height: 20px;
+                background-image: url('@img/icon/country/rus.jpg');
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+
+		&__info {
+            &:first-child {
+            }
+		}
+
+		&__title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 6px;
+		}
+
+		&__text {
+            font-size: 16px;
+            line-height: 24px;
+		}
+
+		&__footer {
+            grid-column: 1 / 7;
+            display: flex;
+            gap: 48px;
+            margin-left: -60px;
+		}
+
+		&__def {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+		}
+
+		&__info-title {
+		}
+
+		&__img {
+            height: 20px;
+            width: 125px;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+		}
+
+		&__availability {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+		}
+
+        &__order {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            padding: 18px 24px;
+            color: #F5F5F5;
+            font-weight: 500;
+            font-size: 14px;
+            background: #3482FC;
+            text-transform: uppercase;
+            border-radius: 8px;
+        }
+
+		&__info-text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            span {
+                color: #3482FC;
+            }
+		}
+}
+.virtual-servers {
+}
+
+.hot {
+    position: absolute;
+    top: -21.5px;
+    left: 28px;
+    padding: 9px 12px;
+    background: #3482FC;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__img {
+        height: 25px;
+        width: 20px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #F5F5F5;
+        line-height: normal;
+    }
+}
