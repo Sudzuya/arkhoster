@@ -3,6 +3,8 @@ import { bodyLock, isMobile } from "./functions.js";
 // Подключение списка активных модулей
 import { flsModules } from "./modules.js";
 
+import '../files/forms/customRange.js';
+
 let burger = document.querySelector('.header__burger')
 burger.addEventListener('click', ()=> {
     burger.classList.toggle('active')
@@ -25,14 +27,17 @@ dataMenuBtn.forEach((el) => {
     })
 })
 
+let blogFull = document.querySelector('.blog--full .blog__content')
+if (blogFull) {
+    let grid = new Isotope(blogFull, {
+        itemSelector: '.blog__item--filter',
+        layoutMode: 'masonry',
+        masonry: {
+            gutter: 40,
+          }
+    });
+}
 
-let grid = new Isotope('.blog--full .blog__content', {
-    itemSelector: '.blog__item--filter',
-    layoutMode: 'masonry',
-    masonry: {
-        gutter: 40,
-      }
-});
 
 let filterBtn = document.querySelectorAll('.filter .filter__btn');
 

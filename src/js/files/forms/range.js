@@ -9,7 +9,7 @@ import * as noUiSlider from 'nouislider';
 
 export function rangeInit() {
 	const priceSlider = document.querySelector('#range');
-	if (priceSlider) {
+	if (priceSlider) { 
 		let textFrom = priceSlider.getAttribute('data-from');
 		let textTo = priceSlider.getAttribute('data-to');
 		noUiSlider.create(priceSlider, {
