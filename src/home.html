@@ -194,7 +194,7 @@
 										counter strike
 										global offensive
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -205,7 +205,7 @@
 									<div class="all-game__title">
 										minecraft
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -216,7 +216,7 @@
 									<div class="all-game__title">
 										7 days to die
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -227,7 +227,7 @@
 									<div class="all-game__title">
 										arma 3
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -238,7 +238,7 @@
 									<div class="all-game__title">
 										V Rising
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -249,7 +249,7 @@
 									<div class="all-game__title">
 										Hurtworld
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -260,7 +260,7 @@
 									<div class="all-game__title">
 										project zomboid 
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -271,12 +271,12 @@
 									<div class="all-game__title">
 										ark survival evolved
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
 							</div>
-							<a href="/all-games.html" class="all-game__full">
+							<a href="all-games.html" class="all-game__full">
 								смотреть Все игры
 							</a>
 						</div>
@@ -302,7 +302,7 @@
 									</div>
 									<div class="dedicated-servers__body">
 										<div class="dedicated-servers__left-block">
-											<div class="dedicated-servers__filter filter">
+											<div class="dedicated-servers__filter ">
 												<div class="filter__item">
 													<div class="filter__title">
 														Расположение
@@ -325,6 +325,108 @@
 														<option value="Германия">Берлин</option>
 													</select>
 												</div>
+											</div>
+											<div class="servers__filter filter-range">
+												<div class="filter-range__content">
+													<div class="filter-range__title">
+														Объем памяти(ОЗУ), GB
+													</div>
+													<div class="filter-range__input">
+														<div class="filter-range__header">
+															<div class="filter-range__start-value"></div>
+															<div class="filter-range__start-end"></div>
+														</div>
+														<div class="multi-range-slider">
+															<input type="range" class="input-left" min="0" max="512" value="16">
+															<input type="range" class="input-right" min="0" max="512" value="512">
+													
+															<div class="slider">
+																<div class="track"></div>
+																<div class="range"></div>
+																<div class="thumb left"></div>
+																<div class="thumb right"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="filter-range__content">
+													<div class="filter-range__title">
+														Ядра, кол-во
+													</div>
+													<div class="filter-range__input">
+														<div class="filter-range__header">
+															<div class="filter-range__start-value"></div>
+															<div class="filter-range__start-end"></div>
+														</div>
+														<div class="multi-range-slider">
+															<input type="range" class="input-left" min="0" max="28" value="4">
+															<input type="range" class="input-right" min="0" max="28" value="28">
+													
+															<div class="slider">
+																<div class="track"></div>
+																<div class="range"></div>
+																<div class="thumb left"></div>
+																<div class="thumb right"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="filter-range__content">
+													<div class="filter-range__title">
+														Базовая частота, GHz
+													</div>
+													<div class="filter-range__input">
+														<div class="filter-range__header">
+															<div class="filter-range__start-value"></div>
+															<div class="filter-range__start-end"></div>
+														</div>
+														<div class="multi-range-slider">
+															<input type="range" class="input-left" step="0.10" min="0" max="3.50" value="2.20">
+															<input type="range" class="input-right" step="0.10" min="0" max="3.50" value="3.50">
+													
+															<div class="slider">
+																<div class="track"></div>
+																<div class="range"></div>
+																<div class="thumb left"></div>
+																<div class="thumb right"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="servers__checkbox">
+												<div class="servers__checkbox-title">
+													Диски
+												</div>
+												<div class="checkbox__body">
+													<div class="checkbox">
+														<input id="sata" class="checkbox__input" type="checkbox">
+														<label for="sata" class="checkbox__label">
+															<span class="checkbox__text">SATA</span>
+														</label>
+													</div>
+													<div class="checkbox">
+														<input id="ssd" class="checkbox__input" type="checkbox">
+														<label for="ssd" class="checkbox__label">
+															<span class="checkbox__text">SSD</span>
+														</label>
+													</div>
+													<div class="checkbox">
+														<input id="nvme" class="checkbox__input" type="checkbox">
+														<label for="nvme" class="checkbox__label">
+															<span class="checkbox__text">NVMe</span>
+														</label>
+													</div>
+												</div>
+
+											</div>
+											<div class="servers__custom-setting custom-setting">
+												<div class="custom-setting__title">
+													Не нашли свои настройки?
+												</div>
+												<a href="" class="custom-setting__link">
+													Создать свою сборку
+												</a>
 											</div>
 										</div>
 										<div class="dedicated-servers__rigth-block filter-result">
@@ -384,8 +486,320 @@
 																	<span>20 серверов</span>
 																</div>
 															</div>
+															<a href="ordering-server.html" class="filter-result__order">
+																Заказать сервер		
+															</a>
+														</div>
+													</div>
+													<div class="filter-result__item-result">
+														<div class="filter-result__hot hot">
+															<div class="hot__img">
+																<img src="@img/icon/hot.svg" alt="">
+															</div>
+															<div class="hot__title">
+																Топ предложение
+															</div>
+														</div>
+														<div data-country class="filter-result__info">
+															<div class="filter-result__title">6 cores (12t)</div>
+															<div class="filter-result__text"><span>E5-2643 v2</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">3,50 – 3,80 GHz</div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">64 GB</div>
+															<div class="filter-result__text"><span>+ до 256GB</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">2x SSD 480GB</div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">100 Mbit/s</div>
+															<div class="filter-result__text"><span>+ до 1 Gbit/s</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">5000 <span> ₽/месяц</span></div>
+														</div>
+														<div class="filter-result__footer">
+															<div class="filter-result__def">
+																<div class="filter-result__info-title">
+																	Anti DDoS
+																</div>
+																<div class="filter-result__img">
+																	<img src="@img/home/fourBlock/ddos.svg" alt="">
+																</div>
+															</div>
+															<div class="filter-result__availability">
+																<div class="filter-result__info-title">
+																	В наличии
+																</div>
+																<div class="filter-result__info-text">
+																	<span>20 серверов</span>
+																</div>
+															</div>
 															<a class="filter-result__order">
-Заказать сервер
+																Заказать сервер
+															</a>
+														</div>
+													</div>
+													<div class="filter-result__item-result">
+														<div class="filter-result__hot hot">
+															<div class="hot__img">
+																<img src="@img/icon/hot.svg" alt="">
+															</div>
+															<div class="hot__title">
+																Топ предложение
+															</div>
+														</div>
+														<div data-country class="filter-result__info">
+															<div class="filter-result__title">6 cores (12t)</div>
+															<div class="filter-result__text"><span>E5-2643 v2</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">3,50 – 3,80 GHz</div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">64 GB</div>
+															<div class="filter-result__text"><span>+ до 256GB</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">2x SSD 480GB</div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">100 Mbit/s</div>
+															<div class="filter-result__text"><span>+ до 1 Gbit/s</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">5000 <span> ₽/месяц</span></div>
+														</div>
+														<div class="filter-result__footer">
+															<div class="filter-result__def">
+																<div class="filter-result__info-title">
+																	Anti DDoS
+																</div>
+																<div class="filter-result__img">
+																	<img src="@img/home/fourBlock/ddos.svg" alt="">
+																</div>
+															</div>
+															<div class="filter-result__availability">
+																<div class="filter-result__info-title">
+																	В наличии
+																</div>
+																<div class="filter-result__info-text">
+																	<span>20 серверов</span>
+																</div>
+															</div>
+															<a class="filter-result__order">
+																Заказать сервер
+															</a>
+														</div>
+													</div>
+													<div class="filter-result__item-result">
+														<div class="filter-result__hot hot">
+															<div class="hot__img">
+																<img src="@img/icon/hot.svg" alt="">
+															</div>
+															<div class="hot__title">
+																Топ предложение
+															</div>
+														</div>
+														<div data-country class="filter-result__info">
+															<div class="filter-result__title">6 cores (12t)</div>
+															<div class="filter-result__text"><span>E5-2643 v2</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">3,50 – 3,80 GHz</div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">64 GB</div>
+															<div class="filter-result__text"><span>+ до 256GB</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">2x SSD 480GB</div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">100 Mbit/s</div>
+															<div class="filter-result__text"><span>+ до 1 Gbit/s</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">5000 <span> ₽/месяц</span></div>
+														</div>
+														<div class="filter-result__footer">
+															<div class="filter-result__def">
+																<div class="filter-result__info-title">
+																	Anti DDoS
+																</div>
+																<div class="filter-result__img">
+																	<img src="@img/home/fourBlock/ddos.svg" alt="">
+																</div>
+															</div>
+															<div class="filter-result__availability">
+																<div class="filter-result__info-title">
+																	В наличии
+																</div>
+																<div class="filter-result__info-text">
+																	<span>20 серверов</span>
+																</div>
+															</div>
+															<a class="filter-result__order">
+																Заказать сервер
+															</a>
+														</div>
+													</div>
+													<div class="filter-result__item-result">
+														<div class="filter-result__hot hot">
+															<div class="hot__img">
+																<img src="@img/icon/hot.svg" alt="">
+															</div>
+															<div class="hot__title">
+																Топ предложение
+															</div>
+														</div>
+														<div data-country class="filter-result__info">
+															<div class="filter-result__title">6 cores (12t)</div>
+															<div class="filter-result__text"><span>E5-2643 v2</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">3,50 – 3,80 GHz</div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">64 GB</div>
+															<div class="filter-result__text"><span>+ до 256GB</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">2x SSD 480GB</div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">100 Mbit/s</div>
+															<div class="filter-result__text"><span>+ до 1 Gbit/s</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">5000 <span> ₽/месяц</span></div>
+														</div>
+														<div class="filter-result__footer">
+															<div class="filter-result__def">
+																<div class="filter-result__info-title">
+																	Anti DDoS
+																</div>
+																<div class="filter-result__img">
+																	<img src="@img/home/fourBlock/ddos.svg" alt="">
+																</div>
+															</div>
+															<div class="filter-result__availability">
+																<div class="filter-result__info-title">
+																	В наличии
+																</div>
+																<div class="filter-result__info-text">
+																	<span>20 серверов</span>
+																</div>
+															</div>
+															<a class="filter-result__order">
+																Заказать сервер
+															</a>
+														</div>
+													</div>
+													<div class="filter-result__item-result">
+														<div class="filter-result__hot hot">
+															<div class="hot__img">
+																<img src="@img/icon/hot.svg" alt="">
+															</div>
+															<div class="hot__title">
+																Топ предложение
+															</div>
+														</div>
+														<div data-country class="filter-result__info">
+															<div class="filter-result__title">6 cores (12t)</div>
+															<div class="filter-result__text"><span>E5-2643 v2</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">3,50 – 3,80 GHz</div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">64 GB</div>
+															<div class="filter-result__text"><span>+ до 256GB</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">2x SSD 480GB</div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">100 Mbit/s</div>
+															<div class="filter-result__text"><span>+ до 1 Gbit/s</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">5000 <span> ₽/месяц</span></div>
+														</div>
+														<div class="filter-result__footer">
+															<div class="filter-result__def">
+																<div class="filter-result__info-title">
+																	Anti DDoS
+																</div>
+																<div class="filter-result__img">
+																	<img src="@img/home/fourBlock/ddos.svg" alt="">
+																</div>
+															</div>
+															<div class="filter-result__availability">
+																<div class="filter-result__info-title">
+																	В наличии
+																</div>
+																<div class="filter-result__info-text">
+																	<span>20 серверов</span>
+																</div>
+															</div>
+															<a class="filter-result__order">
+																Заказать сервер
+															</a>
+														</div>
+													</div>
+													<div class="filter-result__item-result">
+														<div class="filter-result__hot hot">
+															<div class="hot__img">
+																<img src="@img/icon/hot.svg" alt="">
+															</div>
+															<div class="hot__title">
+																Топ предложение
+															</div>
+														</div>
+														<div data-country class="filter-result__info">
+															<div class="filter-result__title">6 cores (12t)</div>
+															<div class="filter-result__text"><span>E5-2643 v2</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">3,50 – 3,80 GHz</div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">64 GB</div>
+															<div class="filter-result__text"><span>+ до 256GB</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">2x SSD 480GB</div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">100 Mbit/s</div>
+															<div class="filter-result__text"><span>+ до 1 Gbit/s</span></div>
+														</div>
+														<div class="filter-result__info">
+															<div class="filter-result__title">5000 <span> ₽/месяц</span></div>
+														</div>
+														<div class="filter-result__footer">
+															<div class="filter-result__def">
+																<div class="filter-result__info-title">
+																	Anti DDoS
+																</div>
+																<div class="filter-result__img">
+																	<img src="@img/home/fourBlock/ddos.svg" alt="">
+																</div>
+															</div>
+															<div class="filter-result__availability">
+																<div class="filter-result__info-title">
+																	В наличии
+																</div>
+																<div class="filter-result__info-text">
+																	<span>20 серверов</span>
+																</div>
+															</div>
+															<a class="filter-result__order">
+																Заказать сервер
 															</a>
 														</div>
 													</div>
@@ -443,18 +857,245 @@
 													</div>
 												</div>
 											</div>
+											<button class="servers__full">
+												Показать еще 5 конфигураций
+											</button>
 										</div>
 									</div>
 								</div>
 								<div class="tabs__body virtual-servers">
-									Содержимое второго таба
+									<div class="dedicated-servers__title">
+										<h2>Виртуальные серверы</h2>
+									</div>
+									<div class="dedicated-servers__text">
+										Готовые протестированные серверы с возможностью расширения для любых задач
+									</div>
+									<div class="virtual-servers__body">
+										<div class="virtual-servers__col">
+											<div class="filter-range__content">
+												<div class="filter-range__title">
+													16х CPU ядра
+												</div>
+												<div class="filter-range__input">
+													<div class="filter-range__header">
+														<div class="filter-range__start-value"></div>
+														<div class="filter-range__start-end"></div>
+													</div>
+													<div class="multi-range-slider">
+														<input type="range" class="input-left" min="0" max="24" value="1">
+														<input type="range" class="input-right" min="0" max="24" value="24">
+												
+														<div class="slider">
+															<div class="track"></div>
+															<div class="range"></div>
+															<div class="thumb left"></div>
+															<div class="thumb right"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="filter-range__content">
+												<div class="filter-range__title">
+													1.5 TB Диск
+												</div>
+												<div class="filter-range__input">
+													<div class="filter-range__header">
+														<div class="filter-range__start-value"></div>
+														<div class="filter-range__start-end"></div>
+													</div>
+													<div class="multi-range-slider">
+														<input type="range" class="input-left" min="0" max="24" value="1">
+														<input type="range" class="input-right" min="0" max="24" value="24">
+												
+														<div class="slider">
+															<div class="track"></div>
+															<div class="range"></div>
+															<div class="thumb left"></div>
+															<div class="thumb right"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="options">
+												<div class="options__header">
+													<div class="options__title">
+														Адреса IPv4
+													</div>
+													<div class="options__currency">
+														1000 ₽
+													</div>
+												</div>
+												<div class="options__body">
+													<div class="options__item">
+														<input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option">
+														<label for="o_1" class="options__label"><span class="options__text">1</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="o_2" class="options__input" type="radio" value="2" name="option">
+														<label for="o_2" class="options__label"><span class="options__text">2</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="o_3" class="options__input" type="radio" value="3" name="option">
+														<label for="o_3" class="options__label"><span class="options__text">3</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="o_4" class="options__input" type="radio" value="4" name="option">
+														<label for="o_4" class="options__label"><span class="options__text">4</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="o_5" class="options__input" type="radio" value="5" name="option">
+														<label for="o_5" class="options__label"><span class="options__text">5</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="o_6" class="options__input" type="radio" value="6" name="option">
+														<label for="o_6" class="options__label"><span class="options__text">6</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="o_7" class="options__input" type="radio" value="7" name="option">
+														<label for="o_7" class="options__label"><span class="options__text">7</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="o_8" class="options__input" type="radio" value="8" name="option">
+														<label for="o_8" class="options__label"><span class="options__text">8</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="o_9" class="options__input" type="radio" value="9" name="option">
+														<label for="o_9" class="options__label"><span class="options__text">9</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="o_10" class="options__input" type="radio" value="10" name="option">
+														<label for="o_10" class="options__label"><span class="options__text">10</span></label>
+													</div>
+												</div>
+											</div>
+											<div class="options">
+												<div class="options__header">
+													<div class="options__title">
+														Адреса IPv6
+													</div>
+													<div class="options__currency">
+														1000 ₽
+													</div>
+												</div>
+												<div class="options__body">
+													<div class="options__item">
+														<input hidden id="opt_1" class="options__input" checked type="radio" value="1" name="option">
+														<label for="opt_1" class="options__label"><span class="options__text">1</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="opt_2" class="options__input" type="radio" value="2" name="option">
+														<label for="opt_2" class="options__label"><span class="options__text">2</span></label>
+													</div>												
+													<div class="options__item">
+														<input hidden id="opt_3" class="options__input" type="radio" value="3" name="option">
+														<label for="opt_3" class="options__label"><span class="options__text">3</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="opt_4" class="options__input" type="radio" value="4" name="option">
+														<label for="opt_4" class="options__label"><span class="options__text">4</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="opt_5" class="options__input" type="radio" value="5" name="option">
+														<label for="opt_5" class="options__label"><span class="options__text">5</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="opt_6" class="options__input" type="radio" value="6" name="option">
+														<label for="opt_6" class="options__label"><span class="options__text">6</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="opt_7" class="options__input" type="radio" value="7" name="option">
+														<label for="opt_7" class="options__label"><span class="options__text">7</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="opt_8" class="options__input" type="radio" value="8" name="option">
+														<label for="opt_8" class="options__label"><span class="options__text">8</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="opt_9" class="options__input" type="radio" value="9" name="option">
+														<label for="opt_9" class="options__label"><span class="options__text">9</span></label>
+													</div>
+													<div class="options__item">
+														<input hidden id="opt_10" class="options__input" type="radio" value="10" name="option">
+														<label for="opt_10" class="options__label"><span class="options__text">10</span></label>
+													</div>
+												</div>
+											</div>
+											<div class="filter-range__content">
+												<div class="filter-range__title">
+													64 GB Оперативная память (RAM)
+												</div>
+												<div class="filter-range__input">
+													<div class="filter-range__header">
+														<div class="filter-range__start-value"></div>
+														<div class="filter-range__start-end"></div>
+													</div>
+													<div class="multi-range-slider">
+														<input type="range" class="input-left" min="0" max="64" value="1">
+														<input type="range" class="input-right" min="0" max="64" value="64">
+												
+														<div class="slider">
+															<div class="track"></div>
+															<div class="range"></div>
+															<div class="thumb left"></div>
+															<div class="thumb right"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="virtual-servers__col">
+											<div class="virtual-servers__config config">
+												<div data-spollers class="spollers">
+													<div class="spollers__item">
+														<button type="button" data-spoller class="spollers__title">
+															Ваша конфигурация
+														</button>
+														<div class="spollers__body">
+															<div class="selects">
+																<div class="selects__title">
+																	Период оплаты
+																</div>
+																<select class="selects__body">
+																	<option value="1" selected>1 месяц</option>
+																	<option value="2">1 месяц</option>
+																	<option value="3">1 месяц</option>
+																	<option value="4">1 месяц</option>
+																</select>
+															</div>
+															<div class="config__price">
+																<div class="config__title">
+																	Стоимость
+																</div>
+																<div class="config__row">
+																	<p>В месяц:</p>
+																	<p>20 458 ₽</p>
+																</div>
+																<div class="config__row">
+																	<p>Экономия</p>
+																	<p>0 ₽</p>
+																</div>
+																<div class="config__row">
+																	<p>НДС</p>
+																	<p>не облагается</p>
+																</div>
+															</div>
+															<div class="config__total">
+																<p>Итого к оплате</p>
+																<span>20 458 ₽</span>
+															</div>
+															<div class="config__btn">
+																заказать VDS сервер 
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<button class="servers__full">
-						Показать еще 5 конфигураций
-					</button>
 				</section>
 				<section class="admin-panel">
 					<div class="admin-panel__container">
@@ -553,7 +1194,7 @@
 								Свежее в блоге
 							</div>
 							<div class="blog__content">
-								<div class="blog__item">
+								<a href="blog-full.html" class="blog__item">
 									<div class="blog__img">
 										<img src="@img/home/sixBlock/01.jpg" alt="">
 									</div>
@@ -568,8 +1209,8 @@
 											Day of the System Administrator. Holiday Discounts
 										</div>
 									</div>
-								</div>
-								<div class="blog__item">
+								</a>
+								<a href="blog-full.html" class="blog__item">
 									<div class="blog__img">
 										<img src="@img/home/sixBlock/01.jpg" alt="">
 									</div>
@@ -584,8 +1225,8 @@
 											Меняют ли разработчиков на переправе?
 										</div>
 									</div>
-								</div>
-								<div class="blog__item">
+								</a>
+								<a href="blog-full.html" class="blog__item">
 									<div class="blog__img">
 										<img src="@img/home/sixBlock/02.jpg" alt="">
 									</div>
@@ -600,9 +1241,9 @@
 											Почему гранд-стратегии — это не стыдно
 										</div>
 									</div>
-								</div>
+								</a>
 							</div>
-							<a href="" class="blog__full">
+							<a href="blog.html" class="blog__full">
 								Все новости
 							</a>
 						</div>

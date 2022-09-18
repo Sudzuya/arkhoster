@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Заказ сервера"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="breadcrumbs">
+					<div class="breadcrumbs__container">
+						<div class="breadcrumbs__body">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__list-item">
+									<a href="/" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__separator"></li>
+                                <li class="breadcrumbs__list-item">
+									<a href="/" class="breadcrumbs__link">Выделенный сервер</a>
+								</li>
+								<li class="breadcrumbs__separator"></li>
+								<li class="breadcrumbs__list-item">
+									<span>Заказ сервера</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+                <section class="ordering-server">
+                    <div class="ordering-server__bg"></div>
+                    <div class="ordering-server__container">
+                        <div class="ordering-server__body">
+                            <div class="ordering-server__title">
+                                <h2>Заказ сервера</h2>
+                            </div>
+                            <div class="ordering-server__col">
+                                <div class="ordering-server__name">
+                                    <div class="ordering-server__img">
+                                        <img src="@img/icon/server.svg" alt="">
+                                    </div>
+                                    <div class="ordering-server__title-name">
+                                        Intel Xeon E5-2643 v2, 64 ГБ DDR3, 2 x 480 ГБ SSD
+                                    </div>
+                                    <div class="ordering-server__price">
+                                        <span>6 700 руб./мес.</span>
+                                    </div>
+                                </div>
+                                <div class="ordering-server__option option-info">
+                                    <div class="option-info__title">
+                                        <h3>Администрирование</h3>
+                                    </div>
+                                    <div class="option-info__text">
+                                        Стандартный вариант предоставления сервера: поставим чистую ОС и передадим готовый к работе сервер под ваше управление.
+                                    </div>
+                                    <div class="option-info__body">
+                                        <div class="option-info__item">
+                                            <input hidden id="admin_1" class="option-info__input" checked type="radio" value="1" name="option3">
+                                            <label for="admin_1" class="option-info__label">
+                                                <span>
+                                                    Без администрирования
+                                                </span>
+                                                <span>
+                                                    Бесплатно
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="option-info__item">
+                                            <input hidden id="admin_2" class="option-info__input" type="radio" value="2" name="option3">
+                                            <label for="admin_2" class="option-info__label">
+                                                <span>
+                                                    С администрированием для сайтов
+                                                </span>
+                                                <span>
+                                                    2 500  ₽/мес.
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ordering-server__option option-info">
+                                    <div class="option-info__title">
+                                        <h3>Интернет-канал</h3>
+                                    </div>
+                                    <div class="option-info__text">
+                                        Общая полоса пропускания
+                                    </div>
+                                    <div class="option-info__body">
+                                        <div class="option-info__item">
+                                            <input hidden id="admin_3" class="option-info__input" checked type="radio" value="1" name="option4">
+                                            <label for="admin_3" class="option-info__label">
+                                                <span>
+                                                    100 Мбит/c
+                                                </span>
+                                                <span>
+                                                    Бесплатно
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="option-info__item">
+                                            <input hidden id="admin_4" class="option-info__input" type="radio" value="2" name="option4">
+                                            <label for="admin_4" class="option-info__label">
+                                                <span>
+                                                    1 GB/s
+                                                </span>
+                                                <span>
+                                                    2 500  ₽/мес.
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ordering-server__option option-info">
+                                    <div class="option-info__title">
+                                        <h3>Полоса с защитой от DDoS</h3>
+                                    </div>
+                                    <div class="option-info__body">
+                                        <div class="option-info__item">
+                                            <input hidden id="admin_5" class="option-info__input" checked type="radio" value="1" name="option5">
+                                            <label for="admin_5" class="option-info__label">
+                                                <span>
+                                                    10 Мбит/c
+                                                </span>
+                                                <span>
+                                                    2 500  ₽/мес.
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="option-info__item">
+                                            <input hidden id="admin_6" class="option-info__input" type="radio" value="2" name="option5">
+                                            <label for="admin_6" class="option-info__label">
+                                                <span>
+                                                    50 Мбит/c
+                                                </span>
+                                                <span>
+                                                    10 000  ₽/мес.
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="option-info__item">
+                                            <input hidden id="admin_7" class="option-info__input" type="radio" value="2" name="option5">
+                                            <label for="admin_7" class="option-info__label">
+                                                <span>
+                                                    100 Мбит/c
+                                                </span>
+                                                <span>
+                                                    20 000  ₽/мес.
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ordering-server__dop">
+                                    <div class="ordering-server__header">
+                                        <div class="ordering-server__dop-title">
+                                            <h3>Дополнительные услуги</h3>
+                                        </div>
+                                        <div class="ordering-server__dop-text">
+                                            Количество IP-адресов
+                                        </div>
+                                    </div>
+                                    <div class="options">
+                                        <div class="options__header">
+                                            <div class="options__title">
+                                                Адреса IPv4
+                                            </div>
+                                            <div class="options__currency">
+                                                1000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="options__body">
+                                            <div class="options__item">
+                                                <input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option">
+                                                <label for="o_1" class="options__label"><span class="options__text">1</span></label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="o_2" class="options__input" type="radio" value="2" name="option">
+                                                <label for="o_2" class="options__label"><span class="options__text">2</span></label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="o_3" class="options__input" type="radio" value="3" name="option">
+                                                <label for="o_3" class="options__label"><span class="options__text">3</span></label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="o_4" class="options__input" type="radio" value="4" name="option">
+                                                <label for="o_4" class="options__label"><span class="options__text">4</span></label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="o_5" class="options__input" type="radio" value="5" name="option">
+                                                <label for="o_5" class="options__label"><span class="options__text">5</span></label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="o_6" class="options__input" type="radio" value="6" name="option">
+                                                <label for="o_6" class="options__label"><span class="options__text">6</span></label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="o_7" class="options__input" type="radio" value="7" name="option">
+                                                <label for="o_7" class="options__label"><span class="options__text">7</span></label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="o_8" class="options__input" type="radio" value="8" name="option">
+                                                <label for="o_8" class="options__label"><span class="options__text">8</span></label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="o_9" class="options__input" type="radio" value="9" name="option">
+                                                <label for="o_9" class="options__label"><span class="options__text">9</span></label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="o_10" class="options__input" type="radio" value="10" name="option">
+                                                <label for="o_10" class="options__label"><span class="options__text">10</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="options">
+                                        <div class="options__header">
+                                            <div class="options__title">
+                                                Адреса IPv6
+                                            </div>
+                                            <div class="options__currency">
+                                                1000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="options__body">
+                                            <div class="options__item">
+                                                <input hidden id="opt_1" class="options__input" checked type="radio" value="1" name="option1">
+                                                <label for="opt_1" class="options__label">
+                                                    <span class="options__text">1</span>
+                                                </label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="opt_2" class="options__input" type="radio" value="2" name="option1">
+                                                <label for="opt_2" class="options__label">
+                                                    <span class="options__text">2</span>
+                                                </label>
+                                            </div>												
+                                            <div class="options__item">
+                                                <input hidden id="opt_3" class="options__input" type="radio" value="3" name="option1">
+                                                <label for="opt_3" class="options__label">
+                                                    <span class="options__text">3</span>
+                                                </label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="opt_4" class="options__input" type="radio" value="4" name="option1">
+                                                <label for="opt_4" class="options__label">
+                                                    <span class="options__text">4</span>
+                                                </label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="opt_5" class="options__input" type="radio" value="5" name="option1">
+                                                <label for="opt_5" class="options__label">
+                                                    <span class="options__text">5</span>
+                                                </label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="opt_6" class="options__input" type="radio" value="6" name="option1">
+                                                <label for="opt_6" class="options__label"
+                                                ><span class="options__text">6</span>
+                                                </label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="opt_7" class="options__input" type="radio" value="7" name="option1">
+                                                <label for="opt_7" class="options__label">
+                                                    <span class="options__text">7</span>
+                                                </label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="opt_8" class="options__input" type="radio" value="8" name="option1">
+                                                <label for="opt_8" class="options__label">
+                                                    <span class="options__text">8</span>
+                                                </label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="opt_9" class="options__input" type="radio" value="9" name="option1">
+                                                <label for="opt_9" class="options__label">
+                                                    <span class="options__text">9</span>
+                                                </label>
+                                            </div>
+                                            <div class="options__item">
+                                                <input hidden id="opt_10" class="options__input" type="radio" value="10" name="option1">
+                                                <label for="opt_10" class="options__label">
+                                                    <span class="options__text">10</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ordering-server__disk">
+                                    <div class="ordering-server__disk-text">
+                                        Сетевой диск
+                                    </div>
+                                    <div class="disk">
+                                        <div class="disk__header">
+                                            <div class="disk__title">
+                                                Сетевой диск
+                                            </div>
+                                            <div class="disk__price">
+                                                6000 ₽/мес
+                                            </div>
+                                        </div>
+                                        <select class="disk__body">
+                                            <option value="1" selected>Сетевой диск 30000 ГБ</option>
+                                            <option value="2">Сетевой диск 30000 ГБ</option>
+                                            <option value="3">Сетевой диск 30000 ГБ</option>
+                                            <option value="4">Сетевой диск 30000 ГБ</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="ordering-server__option option-info">
+                                    <div class="option-info__title">
+                                        <h3>Срок аренды</h3>
+                                    </div>
+                                    <div class="option-info__body">
+                                        <div class="option-info__item">
+                                            <input hidden id="admin_8" class="option-info__input" checked type="radio" value="1" name="option7">
+                                            <label for="admin_8" class="option-info__label">
+                                                <span>
+                                                    1 Месяц
+                                                </span>
+                                                <span>
+                                                    36 250 ₽/мес.
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="option-info__item">
+                                            <input hidden id="admin_9" class="option-info__input" type="radio" value="2" name="option7">
+                                            <label for="admin_9" class="option-info__label">
+                                                <span>
+                                                    12 Месяцев 
+                                                </span>
+                                                <span>
+                                                    33 570 ₽/мес.
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="option-info__item">
+                                            <input hidden id="admin_10" class="option-info__input" type="radio" value="2" name="option7">
+                                            <label for="admin_10" class="option-info__label">
+                                                <span>
+                                                    24 Месяцев 
+                                                </span>
+                                                <span>
+                                                    33 570  ₽/мес.
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="option-info__item">
+                                            <input hidden id="admin_11" class="option-info__input" type="radio" value="2" name="option7">
+                                            <label for="admin_11" class="option-info__label">
+                                                <span>
+                                                    36 Месяцев 
+                                                </span>
+                                                <span>
+                                                    33 570  ₽/мес.
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ordering-server__col">
+                                <div class="server-config">
+                                    <div class="server-config__title">
+                                        Ваша конфигурация
+                                    </div>
+                                    <div class="server-config__body">
+                                        <div class="server-config__row">
+                                            <span>Процессор(ы):</span>
+                                            <p>E5-2643 v2</p>
+                                        </div>
+                                        <div class="server-config__row">
+                                            <span>Диски:</span>
+                                            <p>2 x 1 ТБ HDD</p>
+                                        </div>
+                                        <div class="server-config__row">
+                                            <span>Память:</span>
+                                            <p>8 ГБ DDR3</p>
+                                        </div>
+                                        <div class="server-config__row">
+                                            <span>Администрирование</span>
+                                            <p>Нет</p>
+                                        </div>
+                                        <div class="server-config__row">
+                                            <span>ОС</span>
+                                            <p>Без ОС</p>
+                                        </div>
+                                        <div class="server-config__row">
+                                            <span>Интернет-канал</span>
+                                            <p>100 Мбит/c</p>
+                                        </div>
+                                        <div class="server-config__row server-config__row--dop">
+                                            <span>Доп. услуги</span>
+                                            <p>10х Адреса IPv4</p>
+                                            <p>10х Адреса IPv6</p>
+                                            <p>Сетевой диск 30000 ГБ</p>
+                                        </div>
+                                        <div class="server-config__row">
+                                            <span>Срок аренды</span>
+                                            <p>24 Месяц</p>
+                                        </div>
+                                    </div>
+                                    <div class="server-config__total">
+                                        <p>Итого к оплате</p>
+                                        <div class="server-config__total-currency">
+                                            800 458 ₽
+                                        </div>
+                                    </div>
+                                    <div class="server-config__btn">
+                                        заказать хостинг 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

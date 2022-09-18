@@ -7,6 +7,21 @@
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page">
+				<div class="breadcrumbs">
+					<div class="breadcrumbs__container">
+						<div class="breadcrumbs__body">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__list-item">
+									<a href="/" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__separator"></li>
+								<li class="breadcrumbs__list-item">
+									<span>Каталог игр</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 				<section class="all-game">
 					<div class="all-game__bg">
 						<img src="@img/home/fullGame/decor/bg.png" alt="">
@@ -19,6 +34,20 @@
 							<div class="all-game__text">
 								Ознакомьтесь с нашим ассортиментом игровых серверов ниже
 							</div>
+							<div class="all-game__filter">
+								<div class="filter__search filter-search">
+									<input placeholder="Поиск" type="text">
+									<div class="filter-search__img">
+										<img src="@img/icon/search.svg" alt="">
+									</div>
+								</div>
+								<select name="form[]" class="select">
+									<option value="1" selected>Жанры</option>
+									<option value="2">Жанры</option>
+									<option value="3">Жанры</option>
+									<option value="4">Жанры</option>
+								</select>
+							</div>
 							<div class="all-game__body">
 								<div class="all-game__item">
 									<div class="all-game__img">
@@ -28,7 +57,7 @@
 										counter strike
 										global offensive
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -39,7 +68,7 @@
 									<div class="all-game__title">
 										minecraft
 									</div>
-									<a href="/game-full.html" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -50,7 +79,7 @@
 									<div class="all-game__title">
 										7 days to die
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -61,7 +90,7 @@
 									<div class="all-game__title">
 										arma 3
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -72,7 +101,7 @@
 									<div class="all-game__title">
 										V Rising
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -83,7 +112,7 @@
 									<div class="all-game__title">
 										Hurtworld
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -94,7 +123,7 @@
 									<div class="all-game__title">
 										project zomboid 
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -105,7 +134,7 @@
 									<div class="all-game__title">
 										ark survival evolved
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -116,7 +145,7 @@
 									<div class="all-game__title">
 										Squad
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -127,7 +156,7 @@
 									<div class="all-game__title">
 										Citadel: Forged With Fire
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -138,7 +167,7 @@
 									<div class="all-game__title">
 										Dark and Light
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -149,7 +178,7 @@
 									<div class="all-game__title">
 										Eco — Global Survival
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -160,7 +189,7 @@
 									<div class="all-game__title">
 										Terraria
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -171,7 +200,7 @@
 									<div class="all-game__title">
 										Arma Reforger
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -182,7 +211,7 @@
 									<div class="all-game__title">
 										Last Oasis
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -193,7 +222,7 @@
 									<div class="all-game__title">
 										Unturned
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -204,7 +233,7 @@
 									<div class="all-game__title">
 										Beasts Of Bermuda
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -215,7 +244,7 @@
 									<div class="all-game__title">
 										Garry’s Mod
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -227,7 +256,7 @@
 										Empyrion —
                                         Galactic Survival
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -238,7 +267,7 @@
 									<div class="all-game__title">
 										Astroneer
 									</div>
-									<a href="" class="all-game__button">
+									<a href="game-full.html" class="all-game__button">
 										Создать сервер
 									</a>
 								</div>
@@ -271,7 +300,7 @@
                                     <button class="form__submit">Отправить заявку</button>
                                     <div class="form__policy">
                                         Отправляя заявку, вы соглашаетесь с
-                                        <a href="">политикой конфиденциальности.</a>
+                                        <a href="game-full.html">политикой конфиденциальности.</a>
                                     </div>
                                 </form>
                             </div>

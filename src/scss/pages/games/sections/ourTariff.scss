@@ -55,6 +55,17 @@
         border-radius: 8px;
         text-transform: uppercase;
     }
+
+    &__filter {
+        position: absolute;
+        top: -120px;
+        left: 255px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        gap: 64px;
+        width: 800px;
+    }
 }
 .tabs {
 

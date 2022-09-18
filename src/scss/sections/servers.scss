@@ -24,6 +24,7 @@
     }
 
     &__full {
+        margin-top: 32px;
         position: relative;
         font-weight: 500;
         font-size: 14px;
@@ -33,9 +34,26 @@
         border-radius: 8px;
         text-transform: uppercase;
     }
+
+    &__filter {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        margin-bottom: 48px;
+    }
+
+    &__checkbox {
+        margin-bottom: 48px;
+    }
+
+    &__checkbox-title {
+        margin-bottom: 16px;
+    }
 }
+
 .tabs {
     position: relative;
+    width: 100%;
     margin-bottom: 32px;
 
 		&__container {
@@ -83,7 +101,7 @@
 		&__body {
             display: grid;
             gap: 110px;
-            grid-template-columns: 235px 1fr;
+            grid-template-columns: 265px 1fr;
 		}
 
 		&__left-block {
@@ -93,22 +111,28 @@
 		}
 
 		&__rigth-block {
+            display: grid;
+            place-items: center;
 		}
 
 		&__filter-result {
 		}
 }
+
 .filter {
 
 		&__item {
+            margin-bottom: 48px;
 		}
 
 		&__title {
+            margin-bottom: 16px;
 		}
 
 		&__select {
 		}
 }
+
 .filter-result {
 
         span {
@@ -232,7 +256,83 @@
             }
 		}
 }
+
 .virtual-servers {
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 310px;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 110px;
+    }
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+    }
+
+}
+
+.config {
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            &:last-child {
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+    }
+    &__price {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #F5F5F5;
+        margin-bottom: 32px;
+    }
+    &__total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        p {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        span {
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+    &__btn {
+        font-size: 14px;
+        padding: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        background: #3482FC;
+        border-radius: 8px;
+    }
+    .spollers {
+        &__title {
+            text-align: start;
+            font-weight: 500;
+            font-size: 18px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #F5F5F5;
+            width: 100%;
+        }
+    }
+    .selects {
+        padding-bottom: 32px;
+        &__title {
+            font-weight: 500;
+            font-size: 18px;
+            padding: 32px 0 16px;
+        }
+    }
 }
 
 .hot {
@@ -264,3 +364,28 @@
         line-height: normal;
     }
 }
+.custom-setting {
+
+}
+
+.custom-setting {
+    padding: 21px 16px;
+    background: #3482FC;
+    border-radius: 20px;
+    &__title {
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        padding: 18px 23px;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #1E2228;
+        background: #F5F5F5;
+        border-radius: 8px;
+        font-weight: 500;
+    }
+}
+

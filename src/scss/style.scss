@@ -77,9 +77,10 @@ body {
 			height: 100%;
 			width: 100%;
 			background: url('@img/bg.svg');
-			z-index: -10;
+			z-index: -1;
 		}
 	}
+	
 	// Фикс для слайдеров
 	> * {
 		min-width: 0;
@@ -160,4 +161,8 @@ body {
 @import "pages/blog/blog";
 @import "pages/blog/blogFull.scss";
 //Отдельная страница игры
-@import "pages/games/singleGame.scss"
+@import "pages/games/singleGame.scss";
+// Партнерство
+@import "pages/partners/partners.scss";
+// Отдельная услугу
+@import "pages/orderingServer/orderingServer.scss";
