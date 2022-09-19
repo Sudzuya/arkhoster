@@ -150,7 +150,6 @@ body {
 @import 'components/range';
 
 // Подключение стилей отдельных страниц
-
 // Главная страница
 @import "home";
 // Контакты
@@ -166,3 +165,6 @@ body {
 @import "pages/partners/partners.scss";
 // Отдельная услугу
 @import "pages/orderingServer/orderingServer.scss";
+
+// Стили светлой темы
+@import "styleLight.scss";

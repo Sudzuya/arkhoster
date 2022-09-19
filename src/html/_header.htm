@@ -20,9 +20,9 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="header__bg-theme bg-theme">
-				<input type="checkbox">
-				<span class="bg-theme-switch"></span>
+			<div class="bg-theme">
+				<input type="checkbox" id="toggle"/>
+				<label for="toggle"></label>
 			</div>
 			<button class="header__login">
 				Личный кабинет
@@ -32,30 +32,32 @@
 			</div>
 		</div>
 	</div>
-	<div class="menu">
+	<div data-tabs class="menu">
 		<div class="menu__left-block">
 			<div class="menu__title">Меню</div>
-			<ul class="menu__list">
-				<li data-menu="uslugi" class="menu__item">
-					<button>Услуги</button>
-				</li>
-				<li data-menu="company" class="menu__item">
-					<button>Компания</button>
-				</li>
-				<li class="menu__item">
+			<nav data-tabs-titles class="menu__list ">
+				<button type="button" class="menu__item _tab-active">
+					Услуги
+					<div class="menu__decor"></div>
+				</button>
+				<button type="button" class=" menu__item">
+					Компания
+					<div class="menu__decor"></div>
+				</button>
+				<div class="tabs__title menu__item">
 					<a href="contact.html">Контакты</a>
-				</li>
-				<li class="menu__item">
-					<a href="">Блог</a>
-				</li>
-			</ul>
+				</div>
+				<div class="tabs__title menu__item">
+					<a href="blog.html">Блог</a>
+				</div>
+			</nav>
 			<div class="menu__lang">
 				<span>Russian</span> / <span>English</span>
 			</div>
 		</div>
 		<div class="menu__right-block">
-			<div class="menu__menu-result menu-result">
-				<div data-menu="uslugi" class="menu-result__item">
+			<div data-tabs-body class="tabs__content menu__menu-result menu-result">
+				<div class="tabs__body menu-result__item">
 					<div class="menu-result__item-list">
 						<div class="menu-info__title">
 							Сервера
@@ -99,7 +101,7 @@
 						</ul>
 					</div>
 				</div>
-				<div data-menu="company" class="menu-result__item">
+				<div class="tabs__body menu-result__item">
 					<div class="menu-result__item-list">
 						<div class="menu-info__title">
 							О нас

@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Autoplay, Pagination } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -32,7 +32,7 @@ function initSliders() {
 		new Swiper('.favorit-game .swiper', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation],
+			modules: [Navigation, Autoplay, Pagination],
 			wrapperClass: 'favorit-game__wrapper',
 			slideClass: 'favorit-game__slide',
 			observer: true,
@@ -40,31 +40,32 @@ function initSliders() {
 			slidesPerView: 2,
 			spaceBetween: 0,
 			autoHeight: true,
-			speed: 800,
+			speed: 1200,
 			centeredSlides: true,
 			initialSlide: 1,
 			//touchRatio: 0,
 			//simulateTouch: false,
-			//loop: true,
+			loop: true,
+			watchSlidesProgress: true,
 			//preloadImages: false,
 			//lazy: true,
 
-			/*
+			
 			// Эффекты
 			effect: 'fade',
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
-			*/
+			
 
 			// Пагинация
-			/*
+			
 			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
+				el: '.favorit-game__pagination',
+				clickable: false,
 			},
-			*/
+			
 
 			// Скроллбар
 			/*

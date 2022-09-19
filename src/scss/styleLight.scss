@@ -1,0 +1,38 @@
+.light {
+    body {
+        color: #1E2228;
+        background-color: #F6F7F9;
+    }
+    .header {
+        background: #fff;
+        &__logo {
+            filter: invert(1);
+        }
+        &__body {
+            background: #fff;
+        }
+    }
+    .burger {
+        &::after, &::before {
+            background: #1E2228;
+        }
+    }
+    button {
+        color: #fff;
+        background: #1E2228;
+    }
+    .advantagers {
+        &__item {
+            background: rgba(245, 245, 245, 0.7);
+        }
+        &__text {
+            color: #6F6F6F;
+        }
+    }
+    .all-game {
+        &__item {
+            background: #fff;
+            
+        }
+    }
+}

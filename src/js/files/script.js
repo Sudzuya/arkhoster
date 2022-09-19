@@ -5,6 +5,8 @@ import { flsModules } from "./modules.js";
 
 import '../files/forms/customRange.js';
 
+import '../libs/simpleParallax.min.js';
+
 let burger = document.querySelector('.header__burger')
 burger.addEventListener('click', ()=> {
     burger.classList.toggle('active')
@@ -36,16 +38,57 @@ if (blogFull) {
             gutter: 40,
           }
     });
+
+    let filterBtn = document.querySelectorAll('.filter .filter__btn');
+
+    filterBtn.forEach((el)=> {
+        el.addEventListener('click', (event)=> {
+            
+            filterBtn.forEach((e)=> {
+                e.classList.remove('._tab-active')
+            })
+            el.classList.add('._tab-active')
+            
+            let filterData = event.target.getAttribute('data-filter');
+            grid.arrange({
+                filter: filterData
+            });
+        })
+    })
 }
 
 
-let filterBtn = document.querySelectorAll('.filter .filter__btn');
+let tabs = document.querySelector('.filter');
+let selector = document.querySelectorAll('.filter__btn');
 
-filterBtn.forEach((el)=> {
-    el.addEventListener('click', (event)=> {
-        let filterData = event.target.getAttribute('data-filter');
-        grid.arrange({
-            filter: filterData
-        });
+let activeItem = tabs.querySelector('._tab-active');
+let activeWidth = activeItem.scrollWidth;
+
+tabs.querySelector('.filter__gilder').style.left = activeItem.clientLeft+10+'px'
+tabs.querySelector('.filter__gilder').style.width = activeWidth+'px'
+
+selector.forEach((e)=> {
+    e.addEventListener('click', ()=> {
+        let itemPos = e.offsetLeft
+        activeWidth = e.scrollWidth;
+
+        tabs.querySelector('.filter__gilder').style.left = itemPos+'px'
+        tabs.querySelector('.filter__gilder').style.width = activeWidth+'px'
     })
+
+
+
 })
+
+let bgTheme = document.querySelector('.bg-theme')
+bgTheme.addEventListener('click', () => 
+    document.querySelector('html').classList.add('light'))
+
+
+const image = document.getElementsByClassName('all-game__bg');
+new simpleParallax(image, {
+    delay: 0,
+    orientation: 'down',
+    scale: 1.5,
+});
+    
