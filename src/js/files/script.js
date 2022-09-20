@@ -143,49 +143,95 @@ var observeObject = function () {
     return _class;
 }();
 
-var observeTest = function () {
-    observeObject.init('.scroll-bg', function (target, name, oldValue) {
+// var observeTest = function () {
+//     observeObject.init('.scroll-bg', function (target, name, oldValue) {
 
-        console.log(target);
+//         console.log(target);
 
-      if (target.classList.contains('_watcher-view')) {
+//       if (target.classList.contains('_watcher-view')) {
         
-        window.addEventListener('scroll', () => {
-            let value = window.scrollY / window.scrollY
-            let value2 = window.scrollY
-            let value3 = value / value2 * 10000
+//         window.addEventListener('scroll', () => {
+//             let value = window.scrollY / window.scrollY
+//             let value2 = window.scrollY
+//             let value3 = value / value2 * 10000
             
-            let upScroll = countHidden(scrollBg)
+//             let upScroll = countHidden(scrollBg)
 
-            // console.log(upScroll.up);
+//             // console.log(upScroll.up);
 
-            let item3 = target.querySelector('[data-scroll="3"]')
-            let item4 = target.querySelector('[data-scroll="4"]')
-            let item5 = target.querySelector('[data-scroll="5"]')
-            let item6 = target.querySelector('[data-scroll="6"]')
-            let item7 = target.querySelector('[data-scroll="7"]')
-            let item8 = target.querySelector('[data-scroll="8"]')
-            let item9 = target.querySelector('[data-scroll="9"]')
-            let item10 = target.querySelector('[data-scroll="10"]')
-            let item11 = target.querySelector('[data-scroll="11"]')
-            let item12 = target.querySelector('[data-scroll="12"]')
+//             let item3 = target.querySelector('[data-scroll="3"]')
+//             let item4 = target.querySelector('[data-scroll="4"]')
+//             let item5 = target.querySelector('[data-scroll="5"]')
+//             let item6 = target.querySelector('[data-scroll="6"]')
+//             let item7 = target.querySelector('[data-scroll="7"]')
+//             let item8 = target.querySelector('[data-scroll="8"]')
+//             let item9 = target.querySelector('[data-scroll="9"]')
+//             let item10 = target.querySelector('[data-scroll="10"]')
+//             let item11 = target.querySelector('[data-scroll="11"]')
+//             let item12 = target.querySelector('[data-scroll="12"]')
 
 
-            item3.style.transform = `translate(0, -${value3 * 12 + 'px'})`
-            item4.style.transform = `translate(0, -${value3 * 24 + 'px'})`
-            item5.style.transform = `translate(0, -${value3 * 36 + 'px'})`
-            item6.style.transform = `translate(0, -${value3 * 41 + 'px'})`
-            item7.style.transform = `translate(0, -${value3 * 50 + 'px'})`
-            item8.style.transform = `translate(0, -${value3 * 12 + 'px'})`
-            item9.style.transform = `translate(0, -${value3 * -27 * 0.2 + 'px'})`
-            item10.style.transform = `translate(0, -${value3 * -36 * 0.4 + 'px'})`
-            item11.style.transform = `translate(0, -${value3 * -41 * 0.6 + 'px'})`
-            item12.style.transform = `translate(0, -${value3 * -50 * 0.8 + 'px'})`
+//             item3.style.transform = `translate(0, -${value3 * 12 + 'px'})`
+//             item4.style.transform = `translate(0, -${value3 * 24 + 'px'})`
+//             item5.style.transform = `translate(0, -${value3 * 36 + 'px'})`
+//             item6.style.transform = `translate(0, -${value3 * 41 + 'px'})`
+//             item7.style.transform = `translate(0, -${value3 * 50 + 'px'})`
+//             item8.style.transform = `translate(0, -${value3 * 12 + 'px'})`
+//             item9.style.transform = `translate(0, -${value3 * -27 * 0.2 + 'px'})`
+//             item10.style.transform = `translate(0, -${value3 * -36 * 0.4 + 'px'})`
+//             item11.style.transform = `translate(0, -${value3 * -41 * 0.6 + 'px'})`
+//             item12.style.transform = `translate(0, -${value3 * -50 * 0.8 + 'px'})`
 
-        })
+//         })
 
-      } else {
-        false
-      }
-    });
-  } ();
+//       } else {
+//         false
+//       }
+//     });
+//   } ();
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger.js";
+
+gsap.registerPlugin(ScrollTrigger);
+
+let tl = gsap.timeline({
+  // yes, we can add it to an entire timeline!
+  scrollTrigger: {
+    trigger: ".scroll-bg",
+    pin: false,   // pin the trigger element while active
+    start: "top 300", // when the top of the trigger hits the top of the viewport
+    end: "+=100", // end after scrolling 500px beyond the start
+    scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+    snap: {
+      snapTo: "labels", // snap to the closest label in the timeline
+      duration: 10, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
+      delay: 0.5, // wait 0.2 seconds from the last scroll event before doing the snapping
+      ease: "power1.inOut" // the ease of the snap animation ("power3" by default)
+    }
+  }
+});
+
+tl.addLabel("start")
+  .to(".scroll-bg__img--1", {translateY: -65, })
+  .to(".scroll-bg__img--2", {translateY: -185, })
+
+  .to(".scroll-bg__img--3", {translateY: 170, })
+  .to(".scroll-bg__img--4", {translateY: -30, })
+  .to(".scroll-bg__img--5", {translateY: -160, })
+  .to(".scroll-bg__img--6", {translateY: -105, })
+  .to(".scroll-bg__img--7", {translateY: -280, })
+  .to(".scroll-bg__img--8", {translateY: -150, })
+  .to(".scroll-bg__img--9", {translateY: -360, })
+
+  .to(".scroll-bg__img--10", {translateY: -160, })
+  .to(".scroll-bg__img--11", {translateY: -30, })
+  .to(".scroll-bg__img--12", {translateY: -240, })
+  .to(".scroll-bg__img--13", {translateY: -120, })
+  .to(".scroll-bg__img--14", {translateY: -290, })
+
+  .to(".scroll-bg__img--15", {translateY: -100, })
+
+
+
+
