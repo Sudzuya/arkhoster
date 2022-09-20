@@ -1,21 +1,111 @@
-.all-game {
-    position: relative;
-    padding-top: 130px;
-    margin-bottom: 130px;
-
-    &__bg {
+.scroll-bg {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1060px;
+    width: 2390px;
+    z-index: -1;
+    background: #1e2228;
+    overflow: hidden;
+    &::before {
+        content:"";
         position: absolute;
-        top: 0px;
+        top: -115px;
         left: 0;
-        height: 855px;
+        height: 100%;
         width: 100%;
-        z-index: -1;
+        z-index: 1;
+        background: 
+        linear-gradient(180deg, #1e2228 15%, #1e2228d9 50%, #1e2228 90%);
+        opacity: 0;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+    }
+    &__img {
+        position: relative;
+        height: 280px;
+        width: 205px;
+        border-radius: 20px;
+        overflow: hidden;
         img {
             height: 100%;
             width: 100%;
             object-fit: cover;
+        } 
+    }
+    &__row {
+        display: flex;
+        align-items: center;
+        gap: 85px;
+        &:nth-child(1) {
+            padding-left: 172px;
+            .scroll-bg__img {
+                &:nth-child(2) {
+                    transform: translateY(-95px);
+                }
+            }
+        }
+        &:nth-child(2) {
+            .scroll-bg__img {
+                &:nth-child(1) {
+                    transform: translateY(155px);
+                }
+                &:nth-child(3) {
+                    transform: translateY(-80px);
+                }
+                &:nth-child(4) {
+                    transform: translateY(-160px);
+                }
+                &:nth-child(5) {
+                    transform: translateY(-240px);
+                }
+                &:nth-child(6) {
+                    transform: translateY(-280px);
+                }
+                &:nth-child(7) {
+                    transform: translateY(-340px);
+                }
+            }
+        }
+        &:nth-child(3) {
+            margin-left: 640px;
+            .scroll-bg__img {
+                &:nth-child(1) {
+                    transform: translateY(-80px);
+                }
+                &:nth-child(2) {
+                    transform: translateY(-160px);
+                }
+                &:nth-child(3) {
+                    transform: translateY(-240px);
+                }
+                &:nth-child(4) {
+                    transform: translateY(-280px);
+                }
+                &:nth-child(5) {
+                    transform: translateY(-340px);
+                }
+            }
+        }
+        &:nth-child(4) {
+            margin-left: 1645px;
+            .scroll-bg__img {
+                &:nth-child(1) {
+                    transform: translateY(-280px);
+                }
+            }
         }
     }
+}
+
+.all-game {
+    position: relative;
+    padding-top: 130px;
+    margin-bottom: 130px;
 
     &__container {
     }
